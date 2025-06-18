@@ -16,3 +16,28 @@ It uses SmolVLM-2 for backbone, which relies on SigLIP to encode visual features
 For faster inference through layer skipps, they find the feature of half the total layers offers a good tradeoff between speed and performance.
 
 They use a conditional Flow Matching Transfomer as action expert.
+
+
+## Code Structure {#code-structure}
+
+
+### Policy {#policy}
+
+The hierarchical design of the policy contains:
+
+1.  `SmolVLAPolicy`: Top level, policy interface
+    -   Input/output normalization
+    -   Action selection and queuing
+    -   Batch preparation (images, language, state)
+    -   Framework integration (checkpointing, evaluation)
+
+2.  `VLAFlowMatching`: Middle level, flow matching logic
+    -   Flow matching forward pass (training)
+    -   Action sampling (inference)
+    -   Embedding preparation (prefix/suffix)
+    -   Noise sampling and denoising steps
+
+3.  `SmolVLMWithExpert`: bottom level
+    -   Vision and language embedding
+    -   Cross-attention between VLM and expert
+    -   Multi-layer transformer processing

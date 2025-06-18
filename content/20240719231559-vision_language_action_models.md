@@ -95,6 +95,8 @@ Two principal mechanisms are used to connect the vision–language backbone to t
 
 #### Others {#others}
 
+-   [Knowledge Insulating Vision-Language-Action Models: Train Fast, Run Fast, Generalize Better]({{< relref "driessKnowledgeInsulatingVisionLanguageAction2025.md" >}}), Physical Intelligence, May 29 2025. [[Paper](http://arxiv.org/abs/2505.23705)] [[Website](https://pi.website/research/knowledge_insulation)]
+
 -   **OFT**: Fine-Tuning Vision-Language-Action Models: Optimizing Speed and Success, Stanford, arxiv, Apr 28 2025. [[Paper](https://arxiv.org/abs/2502.19645)] [[Website](https://openvla-oft.github.io/)] [[Code](https://github.com/moojink/openvla-oft)] [[Model](https://huggingface.co/moojink?search_models=oft)]
 
 -   **HybridVLA**: [HybridVLA: Collaborative Diffusion and Autoregression in a Unified Vision-Language-Action Model]({{< relref "liuHybridVLACollaborativeDiffusion2025.md" >}}), Peking University, Mar 13 2025. [[Paper](http://arxiv.org/abs/2503.10631)] [[Website](https://hybrid-vla.github.io)] [[Code](https://github.com/PKU-HMI-Lab/Hybrid-VLA)]
