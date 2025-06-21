@@ -32,12 +32,12 @@ Thus we can get:
 
 $$
 
-\begin{align}
+\begin{aligned}
 x\_t &= \alpha\_t x\_{t-1} + \beta\_t \epsilon\_t \\\\
 &= \alpha\_t (\alpha\_{t-1}x\_{t-2} + \beta\_{t-1}\epsilon\_{t-1}) + \beta\_t\epsilon\_t \\\\
 &= \dots \\\\
 &= (\alpha\_t \cdots \alpha\_1)x\_0 + (\alpha\_t \cdots \alpha\_2)\beta\_1\epsilon\_1 + (\alpha\_t \cdots \alpha\_3) \beta\_2 \epsilon\_2 + \cdots + \alpha\_t\beta\_{t-1}\epsilon\_{t-1} + \beta\_t\epsilon\_t
-\end{align}
+\end{aligned}
 
 $$
 
@@ -58,7 +58,7 @@ We are trying to minimize the distance between original image \\(x\_{t-1}\\) and
 
 $$
 
-\begin{align}
+\begin{aligned}
 \mathcal{L} &= || x\_{t-1} - \theta(x\_t) ||^2 \\\\
 &= || \frac{1}{\alpha\_t}(x\_t - \beta\_t \epsilon\_t) - \theta(x\_t) ||^2 \\\\
 &= || \frac{1}{\alpha\_t}(x\_t - \beta\_t \epsilon\_t) - \frac{1}{\alpha}(x\_t - \beta\_t \epsilon\_{\theta}(x\_t, t)) ||^2 \\\\
@@ -66,7 +66,7 @@ $$
 &\approx || \epsilon\_t - \epsilon\_{\theta}(\alpha\_t x\_{t-1} + \beta\_t \epsilon\_t, t) || ^2 \\\\
 &= || \epsilon\_t - \epsilon\_{\theta}(\alpha\_t (\bar\_{\alpha}\_{t-1} x\_0 + \bar{\beta}\_{t-1}\bar{\epsilon}\_{t-1}) + \beta\_t \epsilon\_t, t) || ^2 \\\\
 &= || \epsilon\_t - \epsilon\_{\theta}(\bar{\alpha}\_t x\_0 + \alpha\_t \bar{\beta}\_{t-1}\bar{\epsilon}\_{t-1} + \beta\_t\epsilon\_t, t) || ^2
-\end{align}
+\end{aligned}
 
 $$
 
