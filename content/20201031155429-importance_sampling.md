@@ -12,16 +12,16 @@ random variable \\(f(x)\\) under distribution \\(p\\) from samples of a differen
 distribution \\(q\\).
 
 The key observation is that \\(\mu\\) is can expressed as the expectation of a
-different random variable \\(f^{\*}(x)=\frac{p(x)}{q(x)}\\) under \\(q\\)
+different random variable \\(f^{\star}(x)=\frac{p(x)}{q(x)} f(x)\\) under \\(q\\)
 
 \begin{equation}
 \begin{aligned}
-\mu &= \mathbf{E}\_{p}[f(x)] \\\\
-&= \sum\_{x} p(x)f(x) \\\\
-&= \sum\_{x} \frac{q(x)}{q(x)}p(x)f(x) \\\\
-&= \sum\_{x} \frac{p(x)}{q(x)} q(x)f(x) \\\\
-&= \mathbf{E}\_{q} \frac{p(x)}{q(x)} f(x) \\\\
-&= \mathbf{E}\_{q} [f^{\*}(x)]
+\mu &= \mathbf{E}_{p}[f(x)] \\
+&= \sum_{x} p(x)f(x) \\
+&= \sum_{x} \frac{q(x)}{q(x)}p(x)f(x) \\
+&= \sum_{x} \frac{p(x)}{q(x)} q(x)f(x) \\
+&= \mathbf{E}_{q} \frac{p(x)}{q(x)} f(x) \\
+&= \mathbf{E}_{q} [f^{*}(x)]
 \end{aligned}
 \end{equation}
 
